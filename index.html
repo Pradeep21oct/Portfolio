@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep Singh - Lead Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Pradeep Singh</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-profile">
+                        <img src="pradeep.jpg" alt="Pradeep Singh" class="hero-photo">
+                    </div>
+                    <h1 class="hero-title">Lead Full Stack Developer</h1>
+                    <p class="hero-subtitle">Transforming complex problems into elegant, scalable, and efficient software solutions with 8+ years of experience in full stack development.</p>
+                    <div class="hero-buttons">
+                        <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn btn-secondary">Hire Me</a>
+                        <a href="Resume_Pradeep_Lead_upd.pdf" class="btn btn-outline" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-title">app.js</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="keyword">const</span> <span class="variable">express</span> = <span class="function">require</span>(<span class="string">'express'</span>);
+<span class="keyword">const</span> <span class="variable">app</span> = <span class="function">express</span>();
+
+<span class="variable">app</span>.<span class="method">get</span>(<span class="string">'/'</span>, (<span class="parameter">req</span>, <span class="parameter">res</span>) => {
+  <span class="variable">res</span>.<span class="method">json</span>({
+    <span class="property">message</span>: <span class="string">'Hello World!'</span>,
+    <span class="property">status</span>: <span class="string">'success'</span>
+  });
+});
+
+<span class="variable">app</span>.<span class="method">listen</span>(<span class="number">3000</span>);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript (ES6+)</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">NestJS</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Webpack</span>
+                            <span class="skill-tag">Jest</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary">
+            <div class="container">
+                <div class="summary-content">
+                    <h2>Professional Summary</h2>
+                    <p>Passionate full-stack web developer with 5+ years of experience building scalable web applications. I specialize in modern JavaScript frameworks, clean architecture, and user-centered design. My expertise spans from crafting intuitive user interfaces to designing robust backend systems.</p>
+                    <div class="summary-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

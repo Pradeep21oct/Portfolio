@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pradeep Singh | Lead Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Pradeep Singh</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Let's Connect</h1>
+                <p>Interested in working together? I'm available for full-time positions and select freelance opportunities</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Professional Inquiries</h2>
+                        <p>I'm actively seeking challenging opportunities as a Lead Full Stack Developer. With expertise in modern JavaScript frameworks, cloud architecture, and team leadership, I can help build scalable web applications and lead technical initiatives.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>contact@pradeepsingh.dev</p>
+                                    <span>For professional inquiries only</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>+1 (415) 555-7890</p>
+                                    <span>Available for scheduled calls</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Location</h3>
+                                    <p>San Francisco Bay Area, CA</p>
+                                    <span>Open to remote & hybrid roles</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>LinkedIn</h3>
+                                    <p>linkedin.com/in/pradeepsingh-dev</p>
+                                    <span>Preferred method for initial contact</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="availability">
+                            <h3>Current Availability</h3>
+                            <div class="availability-status">
+                                <div class="status-indicator available"></div>
+                                <span>Available for new projects</span>
+                            </div>
+                            <p>I'm currently accepting new freelance projects and full-time opportunities. My next availability starts in 2 weeks.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <h2>Get In Touch</h2>
+                            <p class="form-intro">Looking for a senior developer with leadership experience? Let's discuss how I can contribute to your team.</p>
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="freelance">Freelance Project</option>
+                                    <option value="fulltime">Full-time Opportunity</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Project Budget (Optional)</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-10k">$5,000 - $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-50k">$25,000 - $50,000</option>
+                                    <option value="over-50k">$50,000+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline">Project Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="3-6-months">3-6 months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, requirements, or any questions you have..." required></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to my newsletter for web development tips and updates
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending...
+                                </span>
+                            </button>
+
+                            <div class="form-message" id="formMessage"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let's turn your ideas into reality. I'm here to help you build something amazing.</p>
+                    <div class="cta-buttons">
+                        <a href="portfolio.html" class="btn btn-secondary">View My Work</a>
+                        <a href="#contactForm" class="btn btn-primary">Start a Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

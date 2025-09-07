@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pradeep Singh | Lead Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Pradeep Singh</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Work</h1>
+                <p>Showcasing my expertise through real-world projects and technical solutions</p>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="enterprise">Enterprise Solutions</button>
+                    <button class="filter-btn" data-filter="web-app">Web Applications</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="enterprise">
+                        <div class="portfolio-image">
+                            <div class="project-preview">
+                                <div class="browser-mockup">
+                                    <div class="browser-header">
+                                        <div class="browser-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="browser-url">fintech-solutions.com</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mockup-header">FinTech Enterprise Platform</div>
+                                        <div class="mockup-tasks">
+                                            <div class="mockup-task completed"></div>
+                                            <div class="mockup-task"></div>
+                                            <div class="mockup-task"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Enterprise Financial Platform</h3>
+                            <p>Led development of a microservices-based financial platform processing 1M+ transactions daily. Architected scalable solutions using React, Node.js, and Kubernetes.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">GraphQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="cloud">
+                        <div class="portfolio-image">
+                            <div class="project-preview">
+                                <div class="browser-mockup">
+                                    <div class="browser-header">
+                                        <div class="browser-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="browser-url">devops-pipeline.com</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mockup-header">CI/CD Pipeline</div>
+                                        <div class="mockup-tasks">
+                                            <div class="mockup-task completed"></div>
+                                            <div class="mockup-task"></div>
+                                            <div class="mockup-task"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Automated CI/CD Pipeline</h3>
+                            <p>Designed and implemented a robust CI/CD pipeline using GitHub Actions, Docker, and AWS ECS, reducing deployment time by 70%.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                                <span class="tech-tag">AWS ECS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="frontend">
+                        <div class="portfolio-image">
+                            <div class="project-preview">
+                                <div class="browser-mockup">
+                                    <div class="browser-header">
+                                        <div class="browser-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="browser-url">weather-dashboard.com</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mockup-header">Weather Dashboard</div>
+                                        <div class="mockup-weather">
+                                            <div class="weather-card">
+                                                <div class="weather-icon">☀️</div>
+                                                <div class="weather-temp">72°F</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Weather Dashboard</h3>
+                            <p>Interactive weather dashboard with location-based forecasts, charts, and responsive design for all devices.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">API Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="fullstack">
+                        <div class="portfolio-image">
+                            <div class="project-preview">
+                                <div class="browser-mockup">
+                                    <div class="browser-header">
+                                        <div class="browser-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="browser-url">blog-platform.dev</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mockup-header">Blog Platform</div>
+                                        <div class="mockup-blog">
+                                            <div class="blog-post"></div>
+                                            <div class="blog-post"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Blog Platform</h3>
+                            <p>Modern blogging platform with markdown support, user authentication, and content management system.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Prisma</span>
+                                <span class="tech-tag">Vercel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web-app">
+                        <div class="portfolio-image">
+                            <div class="project-preview">
+                                <div class="browser-mockup">
+                                    <div class="browser-header">
+                                        <div class="browser-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="browser-url">finance-tracker.app</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mockup-header">Finance Tracker</div>
+                                        <div class="mockup-chart">
+                                            <div class="chart-bar" style="height: 60%"></div>
+                                            <div class="chart-bar" style="height: 80%"></div>
+                                            <div class="chart-bar" style="height: 40%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Personal Finance Tracker</h3>
+                            <p>Comprehensive finance tracking application with budget planning, expense categorization, and financial insights.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">D3.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="frontend">
+                        <div class="portfolio-image">
+                            <div class="project-preview">
+                                <div class="browser-mockup">
+                                    <div class="browser-header">
+                                        <div class="browser-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="browser-url">portfolio-site.com</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mockup-header">Portfolio Website</div>
+                                        <div class="mockup-portfolio">
+                                            <div class="portfolio-grid-mockup">
+                                                <div class="portfolio-item-mockup"></div>
+                                                <div class="portfolio-item-mockup"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Interactive Portfolio</h3>
+                            <p>Responsive portfolio website with smooth animations, interactive elements, and optimized performance.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

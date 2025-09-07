@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Profile Photo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .preview {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 20px auto;
+            border: 4px solid #2563eb;
+            background: #f0f7ff;
+        }
+        #preview {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .upload-btn {
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .instructions {
+            margin-top: 30px;
+            text-align: left;
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Your Profile Photo</h1>
+    
+    <div class="preview">
+        <img id="preview" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMjU2M2ViIiBkPSJNMjU2IDBBMjU2IDI1NiAwIDEgMSAwIDI1NmEyNTYgMjU2IDAgMCAxIDI1Ni0yNTZtMCA0OGMtMTE0LjkgMC0yMDggOTMuMS0yMDggMjA4czkzLjEgMjA4IDIwOCAyMDggMjA4LTkzLjEgMjA4LTIwOFMzNzAuOSA0OCAyNTYgNDh6bSw2My44IDQwNi40bC04NC45LTYxLjhjLTMuMS0yLjMtNy0zLjYtMTEuMS0zLjYtNCAwLTcuOCAxLjItMTEgMy41bC04Ni41IDYyYy04LDUuOS05LjUgMTcuNS0zLjcgMjUuNiA1LjkgOC4xIDE3LjUgOS43IDI1LjYgMy43bDc1LjMtNTQuNWMzLjUtMi41IDguMS0xLjggMTAuOSAxLjZsMjQuNyAzMy4yIDYxLjgtNDUuMWM4LjEtNS45IDkuNy0xNy41IDMuNy0yNS42LTUuOS04LjEtMTcuNS05LjctMjUuNi0zLjd6Ii8+PC9zdmc+" alt="Preview">
+    </div>
+    
+    <div>
+        <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+        <button class="upload-btn" onclick="document.getElementById('photo-upload').click()">Choose Photo</button>
+    </div>
+    
+    <div class="instructions">
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Click "Choose Photo" to select your profile picture</li>
+            <li>After selecting, right-click the preview and choose "Save image as..."</li>
+            <li>Save it as <code>pradeep.jpg</code> in your website's folder</li>
+            <li>Refresh the About page to see your photo</li>
+        </ol>
+    </div>
+
+    <script>
+        document.getElementById('photo-upload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = document.getElementById('preview');
+                    img.src = event.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
